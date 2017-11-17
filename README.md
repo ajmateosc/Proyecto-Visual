@@ -17,5 +17,8 @@ usuarios(usuario varchar(20), contrasena varchar(20))
 
 con.ConnectionString = "Server=databases.000webhost.com;Database=id3547803_triviaeso;Uid=id3547803_root;Pwd=12345";
 
+# Usuario de Prueba
+usuario: prueba, Contraseña: prueba
+
 
 
