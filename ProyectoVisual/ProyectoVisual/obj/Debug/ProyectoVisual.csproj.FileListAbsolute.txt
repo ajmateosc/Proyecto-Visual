@@ -1,0 +1,13 @@
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.csprojResolveAssemblyReference.cache
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\login.Form1.resources
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Properties.Resources.resources
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\login.Registrarse.resources
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.csproj.GenerateResource.Cache
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\bin\Debug\ProyectoVisual.exe.config
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\bin\Debug\ProyectoVisual.exe
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\bin\Debug\ProyectoVisual.pdb
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\bin\Debug\MySql.Data.dll
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\bin\Debug\MySql.Data.xml
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.exe
+c:\users\alumno\documents\visual studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.pdb
+C:\Users\ALUMNO\Documents\Visual Studio 2017\Projects\ProyectoVisual\ProyectoVisual\obj\Debug\login.VentanaPrincipal.resources
