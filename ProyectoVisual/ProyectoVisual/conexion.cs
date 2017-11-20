@@ -13,7 +13,8 @@ namespace login
         public Conexion()
         {
             con = new MySqlConnection();
-            con.ConnectionString = "Server=localhost;Database=juegoeso;Uid=root;Pwd=12345";
+			string servidor = "Server=sql127.main-hosting.eu;Database=u745078702_juego;Uid=u745078702_app;Pwd=interfaces2017";
+            //con.ConnectionString = "Server=localhost;Database=juegoeso;Uid=root;Pwd=12345";
             try
             {
                 con.Open();

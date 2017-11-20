@@ -4,18 +4,18 @@ prueba
 
 prueba 2
 
-# Datos y String para la conexión a la BD Externa
+# Acceso a la interfaz phpMyAdmin
 
-url: databases.000webhost.com
-Usuario: id3547803_root
-Clave: 12345
+url: https://auth-db127.hostinger.es/
+Usuario: u745078702_app
+Clave: interfaces2017
 
-Base de Datos:  id3547803_triviaeso, con las siguientes tablas:
+Base de Datos con las siguientes tablas:
 estadisticas(id_estadistica int(6), usuario varchar(20), id_juego int(6), puntuacion int(6))
 juegos(id_juego int(6), nombre varchar(20)
 usuarios(usuario varchar(20), contrasena varchar(20))
 
-con.ConnectionString = "Server=databases.000webhost.com;Database=id3547803_triviaeso;Uid=id3547803_root;Pwd=12345";
+string servidor = "Server=sql127.main-hosting.eu;Database=u745078702_juego;Uid=u745078702_app;Pwd=interfaces2017";
 
 # Usuario de Prueba
 usuario: prueba, Contraseña: prueba
