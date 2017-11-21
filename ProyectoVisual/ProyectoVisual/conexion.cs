@@ -14,11 +14,11 @@ namespace login
         {
             con = new MySqlConnection();
 			string servidor = "Server=sql127.main-hosting.eu;Database=u745078702_juego;Uid=u745078702_app;Pwd=interfaces2017";
-            //con.ConnectionString = "Server=localhost;Database=juegoeso;Uid=root;Pwd=12345";
+            con.ConnectionString = servidor;
             try
             {
                 con.Open();
-                //System.Windows.Forms.MessageBox.Show("Conexion exitosa", "Informacion", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                System.Windows.Forms.MessageBox.Show("Conexion exitosa", "Informacion", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
 
             }
             catch (MySqlException ex)

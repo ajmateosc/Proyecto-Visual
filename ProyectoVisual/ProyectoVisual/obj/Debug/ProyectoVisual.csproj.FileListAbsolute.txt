@@ -24,3 +24,17 @@ C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\o
 C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.csproj.GenerateResource.Cache
 C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.exe
 C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.pdb
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\bin\Debug\ProyectoVisual.exe.config
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\bin\Debug\ProyectoVisual.exe
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\bin\Debug\ProyectoVisual.pdb
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\bin\Debug\MySql.Data.dll
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\bin\Debug\MySql.Data.xml
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\login.Form1.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Properties.Resources.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\login.Registrarse.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\login.VentanaPrincipal.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.csproj.GenerateResource.Cache
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.exe
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.pdb
