@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace login
 {
-    class Conexion
+    public class Conexion
     {
         private MySqlConnection con;
         public Conexion()
@@ -18,7 +18,7 @@ namespace login
             try
             {
                 con.Open();
-                System.Windows.Forms.MessageBox.Show("Conexion exitosa", "Informacion", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                //System.Windows.Forms.MessageBox.Show("Conexion exitosa", "Informacion", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
 
             }
             catch (MySqlException ex)
@@ -37,7 +37,7 @@ namespace login
             MySqlCommand comando = new MySqlCommand(sql, con);
             comando.ExecuteNonQuery();
         }
-        protected void cerrar()
+        public void cerrar()
         {
             try
             {

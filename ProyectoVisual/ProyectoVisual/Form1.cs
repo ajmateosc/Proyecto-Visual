@@ -20,20 +20,18 @@ namespace login
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            c = new Conexion();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            c = new Conexion();
+
             if (comprobar()) {
                 user = textBox1.Text;
                 MessageBox.Show("Bienvenido "+user);
 
                 VentanaPrincipal vp = new VentanaPrincipal();
                 vp.ShowDialog();
-            } 
+            }
+            c.cerrar();
         }
 
         private void label3_Click(object sender, EventArgs e)

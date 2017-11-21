@@ -13,7 +13,7 @@ namespace login
 {
     public partial class Registrarse : Form
     {
-        Conexion c = new Conexion();
+        private Conexion c;
 
         public Registrarse()
         {
@@ -22,6 +22,8 @@ namespace login
 
         private void button1_Click(object sender, EventArgs e)
         {
+            c = new Conexion();
+
             Boolean enc=false;
 
             if(usuario.Text.ToString().Length==0|| contrasena.Text.ToString().Length == 0|| repcontrasena.Text.ToString().Length == 0)
@@ -54,6 +56,8 @@ namespace login
                      }
                 }
             }
+
+            c.cerrar();
         }
     }
 }
