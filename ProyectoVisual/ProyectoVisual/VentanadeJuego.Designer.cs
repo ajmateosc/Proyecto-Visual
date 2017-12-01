@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanadeJuego));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +77,16 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(306, 437);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(277, 31);
+            this.textBox1.TabIndex = 2;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -109,17 +119,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 25);
             this.label2.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(306, 437);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 33);
-            this.textBox1.TabIndex = 2;
             // 
             // VentanadeJuego
             // 

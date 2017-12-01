@@ -45,5 +45,11 @@ namespace login
         {
             Application.Exit();   
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+               Mates v = new Mates(usuario);
+            v.ShowDialog();
+        }
     }
 }

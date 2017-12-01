@@ -68,3 +68,6 @@ D:\Isa\Visual\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\login.Vent
 D:\Isa\Visual\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.csproj.GenerateResource.Cache
 D:\Isa\Visual\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.exe
 D:\Isa\Visual\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.pdb
+C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.JuegoIngles.resources
+C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.VentanadeJuego.resources
+C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Mates.resources
