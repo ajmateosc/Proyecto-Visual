@@ -48,14 +48,8 @@ namespace login
                      {
                         c.insertar("INSERT INTO usuarios (usuario, contrasena) VALUES ('"+usuario.Text.ToString()+"', '"+contrasena.Text.ToString()+"')");
 
-                        for(int i=1;i<=4;i++)
-                        {
-                            c.insertar("INSERT INTO `estadisticas`(`usuario`, `id_juego`, `puntuacion`) VALUES ('"+usuario.Text.ToString()+"',"+i+", 0)");
-
-                        }
-
                         MessageBox.Show("Usuario "+usuario.Text.ToString()+" registrado correctamente.");
-                     }
+                    }
                      else
                      {
                         MessageBox.Show("Contraseña y repetir contraseña no coinciden.");
