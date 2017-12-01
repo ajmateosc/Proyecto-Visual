@@ -27,8 +27,9 @@ namespace login
             if (comprobar()) {
                 user = textBox1.Text;
                 MessageBox.Show("Bienvenido "+user);
-
-                VentanaPrincipal vp = new VentanaPrincipal();
+                textBox1.Text = "";
+                textBox2.Text = "";
+                VentanaPrincipal vp = new VentanaPrincipal(user);
                 vp.ShowDialog();
             }
             c.cerrar();
