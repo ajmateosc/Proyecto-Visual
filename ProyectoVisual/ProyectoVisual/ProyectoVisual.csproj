@@ -53,6 +53,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="JuegoIngles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JuegoIngles.Designer.cs">
+      <DependentUpon>JuegoIngles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrarse.cs">
@@ -60,6 +66,12 @@
     </Compile>
     <Compile Include="Registrarse.Designer.cs">
       <DependentUpon>Registrarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanadeJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanadeJuego.Designer.cs">
+      <DependentUpon>VentanadeJuego.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
@@ -69,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuegoIngles.resx">
+      <DependentUpon>JuegoIngles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="Registrarse.resx">
       <DependentUpon>Registrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanadeJuego.resx">
+      <DependentUpon>VentanadeJuego.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
