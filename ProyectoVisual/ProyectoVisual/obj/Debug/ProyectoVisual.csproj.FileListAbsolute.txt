@@ -90,3 +90,9 @@ C:\Users\Emilio\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\b
 C:\Users\Emilio\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\bin\Debug\MySql.Data.xml
 C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Biologia.resources
 C:\Users\ALUMNO\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Biologia2.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Biologia.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Biologia2.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.GeoHistoria.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.JuegoIngles.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.Mates.resources
+C:\Users\Felipe\Documents\GitHub\Proyecto-Visual\ProyectoVisual\ProyectoVisual\obj\Debug\ProyectoVisual.VentanadeJuego.resources

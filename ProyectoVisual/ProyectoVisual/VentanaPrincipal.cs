@@ -57,5 +57,11 @@ namespace login
             Biologia b = new Biologia(usuario);
             b.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            GeoHistoria gh = new GeoHistoria(usuario);
+            gh.ShowDialog();
+        }
     }
 }
