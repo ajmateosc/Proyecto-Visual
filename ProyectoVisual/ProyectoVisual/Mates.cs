@@ -19,16 +19,13 @@ namespace ProyectoVisual
     {
         private Timer time;
         private String usuario;
-      //  private String solucion;
         private char sol;
-     //   private Boolean acertado;
         private Boolean crono;
         private int puntos;
         private int contador;
         public Mates(String user)
         {
             crono = true;
-          //  acertado = true;
             puntos = 0;
             usuario = user;
             contador = 1;
@@ -37,7 +34,12 @@ namespace ProyectoVisual
 
         private void Mates_Load(object sender, EventArgs e)
         {
-       //     MessageBox.Show("Si desea escuchar el audio es necesario tener instalado windows media player");
+            iniciar();
+            
+
+        }
+        public void iniciar()
+        {
             panel1.Visible = true;
             panel2.Visible = false;
             panel3.Visible = false;
@@ -49,59 +51,61 @@ namespace ProyectoVisual
             label11.Visible = false;
             label1.Text = "Bienvenido " + usuario + ", soy Carlos Sobera y esta a punto de jugar a";
             label2.Text = "¿Quién quiere ser MATEMATICO?";
-       //     SoundPlayer simpleSound = new SoundPlayer(@Path.Combine(Application.StartupPath+"sonido", ) );
-            /*  axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\Batman Transition Sound Effect.mp3";
-              axWindowsMediaPlayer1.Ctlcontrols.play();*/
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             panel1.Visible = false;
             panel2.Visible = true;
-            label3.Text = usuario+" tienes que responder a 10 preguntas y dispones de 30 segundos por cada una";
+            label3.Text = usuario + " tienes que responder a 10 preguntas y dispones de 30 segundos por cada una";
             label4.Text = "Además dispones de 2 comodines,";
             label5.Text = "el del público, te mostrar las opcion que el publico ha responido";
-            label6.Text="y el comodín del 50% que eliminara la mitad de las respuestas";
-         /*   axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\Mario Kart Race Start Sound Effect.mp3";
-            axWindowsMediaPlayer1.Ctlcontrols.play();*/
-        }
+            label6.Text = "y el comodín del 50% que eliminara la mitad de las respuestas";
 
+        }
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Button pulsado = (Button)sender;
-            if (pulsado.Text.ToString().Equals("Finalizar")) {
+            Conexion con = new Conexion();
+            if (pulsado.Text.ToString().Equals("Reintentar"))
+            {
+                iniciar();
+            }
+            else if(pulsado.Text.ToString().Equals("Finalizar"))
+            {
                 if (puntos < 5)
                 {
-                    richTextBox1.Text = "El juego finalizó, y con "+puntos+" tristes puntos, dificilmente podrás ser matemático, pero recuerda un matemático no nace, se hace con esfuerzo";
-            /*        axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\Sad Violin.mp3";
-                    axWindowsMediaPlayer1.Ctlcontrols.play();*/
-                } else if(puntos < 8)
+                    richTextBox1.Text = "El juego finalizó, y con " + puntos + " tristes puntos, dificilmente podrás ser matemático, pero recuerda un matemático no nace, se hace con esfuerzo";
+
+                }
+                else if (puntos < 8)
                 {
                     richTextBox1.Text = "El juego finalizó, enhorabuena por tus " + puntos + " puntos, sigue así y recuerda en las matemáticas lo que más resultado da es la constancia";
-              /*      axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\WOW.mp3";
-                    axWindowsMediaPlayer1.Ctlcontrols.play();*/
-                } else if(puntos < 10)
+
+                }
+                else if (puntos < 10)
                 {
-       /*             axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\WOW.mp3";
-                    axWindowsMediaPlayer1.Ctlcontrols.play();*/
+
                     richTextBox1.Text = "El juego finalizo, y lo hiciste de maravilla con tus " + puntos + " puntos. Enhorabuena, serás una de las mentes que guiará a la humanidad en el futuro";
                 }
                 else
                 {
-       /*             axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\Heavenly Music Sound Effect.mp3";
-                    axWindowsMediaPlayer1.Ctlcontrols.play();*/
+
                     richTextBox1.Text = "El juego finalizó, pero lo que no finalizará nunca es tu genialidad, eres uno entre cien mil millones";
                 }
                 buttonA.Text = "";
                 buttonB.Text = "";
                 buttonC.Text = "";
                 buttonD.Text = "";
-            } else {
-                
-                /*             axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\Suspense 1.wav";
-                             axWindowsMediaPlayer1.Ctlcontrols.play();*/
-                Conexion con = new Conexion();
-              //  MessageBox.Show("Pregunta numero " + contador);
+                actualizarPtos(con);
+                colorBoton(Color.DarkGray);
+                pulsado.Text = "Reintentar";
+                //   MessageBox.Show("Final: Su puntuacion fue " + puntos);
+
+            }
+            else
+            {
+                MessageBox.Show("Pregunta numero " + contador);
                 int dif = 1;
                 label9.Text = puntos.ToString();
                 button3.Enabled = false;
@@ -120,20 +124,19 @@ namespace ProyectoVisual
                         if (contador == 10)
                         {
                             button3.Text = "Finalizar";
+
                         }
                         dif = 3;
                     }
                     else
                     {
-                        con.insertar("UPDATE estadisticas SET puntuacion = " + puntos + " WHERE usuario like '" + usuario + "'");
-                        MessageBox.Show("Final: Su puntuacion fue " + puntos);
-                        this.Dispose();
+
                     }
 
                     MySqlDataReader mysql = con.consulta("SELECT * FROM preguntasmates WHERE dificultad = " + dif + " ORDER BY rand() LIMIT 1");
                     if (mysql.Read())
                     {
-                      //  acertado = false;
+
                         pregunta(mysql.GetString(1), mysql.GetString(2), mysql.GetString(3), mysql.GetString(4), mysql.GetString(5), mysql.GetChar(6));
 
                     }
@@ -144,31 +147,36 @@ namespace ProyectoVisual
             }
 
 
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (!label7.Text.ToString().Equals("0")) {
+            if (!label7.Text.ToString().Equals("0"))
+            {
                 if (label7.Text.ToString().Equals("20"))
                 {
-                    label7.ForeColor= Color.Yellow;
-                }else if (label7.Text.ToString().Equals("10"))
+                    label7.ForeColor = Color.Yellow;
+                }
+                else if (label7.Text.ToString().Equals("10"))
                 {
                     label7.ForeColor = Color.Red;
                 }
                 label7.Text = (int.Parse(label7.Text) - 1).ToString();
-                
-            }else{
+
+            }
+            else
+            {
                 label7.Text = "0";
-                button3.Visible=true;
+                button3.Visible = true;
                 habilitarRespuestas(false);
                 colorBoton(Color.DarkSlateGray);
             }
-            
+
         }
         private void pregunta(String pregunta, String a, String b, String c, String d, char solu)
         {
-            
+
             habilitarRespuestas(true);
             colorBoton(Color.White);
             panel2.Visible = false;
@@ -184,8 +192,8 @@ namespace ProyectoVisual
             time.Start();
             richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
             richTextBox1.Text = pregunta;
-            buttonA.Text = "a) "+a;
-            buttonB.Text = "b) "+b;
+            buttonA.Text = "a) " + a;
+            buttonB.Text = "b) " + b;
             buttonC.Text = "c) " + c;
             buttonD.Text = "d) " + d;
             sol = solu;
@@ -199,13 +207,11 @@ namespace ProyectoVisual
         private void buttonA_Click(object sender, EventArgs e)
         {
             Button pulsado = (Button)sender;
-           
+
             String texto = pulsado.Text.Substring(3);
-            if (pulsado.Name.ToString().Equals("button"+sol))
+            if (pulsado.Name.ToString().Equals("button" + sol))
             {
-             /*   axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\Correct Answer Button Sound Effect.mp3";
-                axWindowsMediaPlayer1.Ctlcontrols.play();*/
-             //  acertado = true;
+                
                 label7.Text = "0";
                 pulsado.BackColor = Color.Green;
                 puntos++;
@@ -213,8 +219,7 @@ namespace ProyectoVisual
             }
             else
             {
-       /*         axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\Wrong Buzzer Sound Effect.mp3";
-                axWindowsMediaPlayer1.Ctlcontrols.play();*/
+    
                 pulsado.BackColor = Color.Red;
                 label7.Text = "0";
             }
@@ -259,8 +264,7 @@ namespace ProyectoVisual
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-    /*        axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\MLG Horns Sound Effect.mp3";
-            axWindowsMediaPlayer1.Ctlcontrols.play();*/
+         
             pictureBox4.Enabled = false;
             int cont = 0;
             if (!buttonC.Name.ToString().Equals("button" + sol.ToString()) && cont < 2)
@@ -291,11 +295,11 @@ namespace ProyectoVisual
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-   /*         axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\MLG Horns Sound Effect.mp3";
-            axWindowsMediaPlayer1.Ctlcontrols.play();*/
+            /*         axWindowsMediaPlayer1.URL = "E:\\DAM\\2DAM\\Desarrollo de Interfaces\\Mates1\\efectos varios\\MLG Horns Sound Effect.mp3";
+                     axWindowsMediaPlayer1.Ctlcontrols.play();*/
             pictureBox5.Enabled = false;
             panel6.Visible = true;
-            int estadA = 0, estadB = 0, estadC = 0,estadD=0;
+            int estadA = 0, estadB = 0, estadC = 0, estadD = 0;
             int max = 51;
             Random rnd = new Random();
             switch (sol)
@@ -317,25 +321,41 @@ namespace ProyectoVisual
             estadA += n;
             max -= n;
             n = rnd.Next(0, max);
-        
+
             estadB += n;
-           
+
             max -= n;
-           
+
             n = rnd.Next(0, max);
-         
+
             estadC += n;
-         
-            
+
+
             max -= n;
-     
-            estadD += max-1;
-        
+
+            estadD += max - 1;
+
             label12.Text = "a) " + estadA + " %";
             label13.Text = "b) " + estadB + " %";
             label14.Text = "c) " + estadC + " %";
             label15.Text = "d) " + estadD + " %";
         }
 
-       }
+        public void actualizarPtos(Conexion c)
+        {
+            String ptosviejos="0";
+            MySqlDataReader mysql = c.consulta("select * from estadisticas where usuario like '" + usuario + "' and id_juego = 1");
+            if (mysql.Read())
+            {
+                ptosviejos = mysql.GetString(3);
+               
+            }
+            mysql.Close();
+            if (puntos > int.Parse(ptosviejos))
+            {
+                c.insertar("UPDATE estadisticas SET puntuacion = " + puntos + " WHERE usuario like '" + usuario + "' and id_juego = 1");
+            }
+        }
+    }
+   
 }
