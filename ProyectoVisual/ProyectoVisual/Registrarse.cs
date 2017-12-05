@@ -55,6 +55,7 @@ namespace login
                         }
 
                         MessageBox.Show("Usuario "+usuario.Text.ToString()+" registrado correctamente.");
+                        this.Dispose();
                      }
                      else
                      {
