@@ -51,5 +51,11 @@ namespace login
                Mates v = new Mates(usuario);
             v.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Biologia b = new Biologia(usuario);
+            b.ShowDialog();
+        }
     }
 }

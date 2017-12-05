@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Biologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biologia.Designer.cs">
+      <DependentUpon>Biologia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biologia2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biologia2.Designer.cs">
+      <DependentUpon>Biologia2.cs</DependentUpon>
+    </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -85,6 +97,12 @@
     <Compile Include="VentanaPrincipal.Designer.cs">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Biologia.resx">
+      <DependentUpon>Biologia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biologia2.resx">
+      <DependentUpon>Biologia2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
